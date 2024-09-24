@@ -1,2 +1,2 @@
-# Django-Scrapy
+# Django-Scrapy Project
 Evaluation Task
