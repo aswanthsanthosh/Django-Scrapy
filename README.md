@@ -9,9 +9,13 @@ Features
 
 __Setup__
 __1. Clone the repository__
-   '''
+   ```
    git clone https://github.com/yourusername/django-scrapy-project.git
    cd django_scrappy/
-   '''
+   ```
 __2. Create a Virtual Environment__
+   ```
+   python -m venv env
+   source env/bin/activate
+   ```
   
