@@ -1,6 +1,6 @@
 # Django-Scrapy Project
 
-This project is an integration of Django with Scrapy to scrape data and manage it through Django's web interface. The scraped data can be stored and manipulated via Django's models and viewed in the Django admin interface.
+This project is an integration of Django with Scrapy to scrape data and manage it through Django's web interface. The scraped data can be stored and manipulated via Django's models and viewed in the Django admin interface. Web scrapping has been implemented from this url :- https://netmall.hardoff.co.jp/search/?pricedown=1
 
 Features
 - Scrapy for web scraping.
@@ -41,5 +41,15 @@ __6. Celery__
    ```
 __Usage :__
 - after running the developement server & Celery go to http://127.0.0.1:8000/
-  
+
+  There will be 2 button options available :
+  1. CLICK HERE TO SCRAP
+  2. VIEW SCRAPPED DATA
+ 
+  __- CLICK HERE TO SCRAP__
+  - this will trigger the celery and spider for web scrapping for NetMall(https://netmall.hardoff.co.jp/)
+  __VIEW SCRAPPED DATA__
+  - Scrapped data will be saving as django model object; this can be accessed from clicking VIEW SCRAPPED DATA button
+  - also there is pagination implemented for getting data from models
+  - a button for __CLEAR DB__ is given : this is to clear the database with scrapped data - trigger this after whole celery task take place
    
